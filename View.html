@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="Scripts/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-ui-1.11.1.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.ui.iframedialog.js"></script>
+    <link href="Content/themes/base/all.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(function () {
+//            $("#btnClose").click(function () {
+//                $.iframeDialogClose(function () {
+//                    alert("已关闭");
+//                });
+//            });
+            $("#btnClose").iframeDialogClose(function () {
+                alert("已关闭");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <input type="button" value="关闭" id="btnClose" />
+    </div>
+</body>
+</html>

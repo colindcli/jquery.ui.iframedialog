@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="Scripts/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-ui-1.11.1.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.ui.iframedialog.js"></script>
+	<link href="Content/themes/base/all.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(function () {
+            $("#dialogOpen1").iframeDialog({height:"600",width:"500"});
+
+            $("#dialogOpen2").click(function () {
+                $.iframeDialog({ title: "Input打开", url: "View.html" });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <a id="dialogOpen1" title="超链接打开" href="View.html">超链接打开</a>
+        <br /><br />
+        <input id="dialogOpen2" type="button" value="Input打开" />
+    </div>
+</body>
+</html>
